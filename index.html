@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Math quiz game
+	</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+<div class="container">
+	<center>
+		
+		<h2 style="color: white;">Guess The Word!</h2>
+<h4 id="player_1"></h4>
+<span id="player_1_score"></span>
+<h4 id="player_2"></h4>
+<span id="player_2_score"></span>
+<br>
+<br>
+<h3 id="player_question"></h3>
+<h3 id="player_answer"></h3>
+<div id="output" class="col-lg-6"></div>
+<label>Send You Word: <b style="color: red">Try putting word which has 5 or more alphabet</b></label>
+<input type="text" id="word" class="form-control" placeholder="word">
+
+<br>
+<button onclick="send()" class="btn btn-sucsses"style="width:30%;">Send</button>
+</center>
+</div>
+
+<script src="game_page.js"></script>
+</body>
+
+</head>
+<body>
+<center>
+	<h1>Game</h1>
+	<div class="col-lg-4 col-md-5 col-sm-8 col-xs-11 login_div1">
+	<h3>player1 login for game</h3>
+	<label>user name:</label>
+	<input type="text" id="player1_name_input" class="form-control"placeholder="player1 name=">
+</div>
+<br>
+<br>
+	<div class="col-lg-4 col-md-5 col-sm-8 col-xs-11 login_div2">
+	<h3>player2 login for game</h3>
+	<label>user name:</label>
+	<input type="text" id="player2_name_input" class="form-control"placeholder="player2 name="></div>
+	<br>
+	<button style="width:30%" class="btn btn-primary" onclick="add_user()">login</button>
+</center>
